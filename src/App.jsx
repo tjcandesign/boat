@@ -5,16 +5,16 @@ import SpecList from './components/SpecList'
 
 function App() {
   const boatImages = [
-    '/images/boat/Screenshot 2025-03-11 at 4.07.49 PM.png',
-    '/images/boat/Screenshot 2025-03-11 at 4.07.56 PM.png',
-    '/images/boat/Screenshot 2025-03-11 at 4.08.01 PM.png',
-    '/images/boat/Screenshot 2025-03-11 at 4.08.06 PM.png',
-    '/images/boat/Screenshot 2025-03-11 at 4.08.11 PM.png',
-    '/images/boat/Screenshot 2025-03-11 at 4.08.17 PM.png',
-    '/images/boat/Screenshot 2025-03-11 at 4.08.22 PM.png',
-    '/images/boat/Screenshot 2025-03-11 at 4.08.27 PM.png',
-    '/images/boat/Screenshot 2025-03-11 at 4.08.33 PM.png',
-    '/images/boat/Screenshot 2025-03-11 at 4.08.39 PM.png'
+    '/boat/images/boat/Screenshot 2025-03-11 at 4.07.49 PM.png',
+    '/boat/images/boat/Screenshot 2025-03-11 at 4.07.56 PM.png',
+    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.01 PM.png',
+    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.06 PM.png',
+    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.11 PM.png',
+    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.17 PM.png',
+    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.22 PM.png',
+    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.27 PM.png',
+    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.33 PM.png',
+    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.39 PM.png'
   ]
 
   const specs = {
