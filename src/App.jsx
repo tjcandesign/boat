@@ -96,7 +96,7 @@ function App() {
 
           <section className="contact-section">
             <h2>Interested in this Boat?</h2>
-            <p className="contact-intro">Located in Arlington, VA. Available for viewing by appointment.</p>
+            <p className="contact-intro">Located in Arlington, VA. Available for viewing by appointment. Contact Seaworthy Yacht Sales for appointment availability.</p>
             <div className="contact-buttons">
               <a 
                 href="tel:+12026000069" 
