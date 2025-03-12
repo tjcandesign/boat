@@ -49,6 +49,14 @@
     margin-bottom: 30px;
   }
 
+  .wide-card {
+    column-span: all;
+  }
+
+  .wide-card .card-content img {
+    aspect-ratio: 21/9;
+  }
+
   .card-content {
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);

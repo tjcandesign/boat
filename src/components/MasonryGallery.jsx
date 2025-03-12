@@ -9,7 +9,7 @@ const MasonryGallery = ({ images }) => {
         {images.map((image, index) => (
           <motion.div
             key={index}
-            className="image-card"
+            className={`image-card ${(index === 0 || index === 3) ? 'wide-card' : ''}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
