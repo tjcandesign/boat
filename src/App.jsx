@@ -51,14 +51,16 @@ function App() {
         <header className="header">
           <div className="sticky-header">
             <div className="for-sale-label">For Sale</div>
-            <a href="tel:+12026000069" className="cta-button">
-              Contact Broker
-            </a>
           </div>
           <div className="header-content">
             <div className="title-group">
               <h1>2021 Centurion Fi21</h1>
-              <div className="price">$119,995</div>
+              <div className="price-action-group">
+                <div className="price">$119,995</div>
+                <a href="tel:+12026000069" className="cta-button">
+                  Contact Broker
+                </a>
+              </div>
             </div>
             <p className="location">
               <span className="icon">📍</span>
