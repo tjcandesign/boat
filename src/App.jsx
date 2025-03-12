@@ -54,13 +54,13 @@ function App() {
       <div className="container">
         <header className="header">
           <div className="sticky-header">
+            <div className="for-sale-label">For Sale</div>
             <a href="tel:+12026000069" className="cta-button">
               Contact Seller
             </a>
           </div>
           <div className="header-content">
             <div className="title-group">
-              <div className="for-sale-label">For Sale</div>
               <h1>2021 Centurion Fi21</h1>
               <div className="price">$120,000</div>
             </div>
