@@ -6,18 +6,18 @@ import SpecList from './components/SpecList'
 
 // Using the baseUrl from our previous configuration
 function App() {
-  const baseUrl = '/boat'
+  const baseUrl = 'https://tjcandesign.github.io/boat'
   const boatImages = [
-    `${baseUrl}/boat1.png`,
-    `${baseUrl}/boat2.png`,
-    `${baseUrl}/boat3.png`,
-    `${baseUrl}/boat4.png`,
-    `${baseUrl}/boat5.png`,
-    `${baseUrl}/boat6.png`,
-    `${baseUrl}/boat7.png`,
-    `${baseUrl}/boat8.png`,
-    `${baseUrl}/boat9.png`,
-    `${baseUrl}/boat10.png`
+    '/boat/boat1.png',
+    '/boat/boat2.png',
+    '/boat/boat3.png',
+    '/boat/boat4.png',
+    '/boat/boat5.png',
+    '/boat/boat6.png',
+    '/boat/boat7.png',
+    '/boat/boat8.png',
+    '/boat/boat9.png',
+    '/boat/boat10.png'
   ]
 
   const specs = {
@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="app">
       <div className="background-wrapper">
-        <img src={`${baseUrl}/images/Background.svg`} alt="Background pattern" className="background-image" />
+        <img src="/boat/images/Background.svg" alt="Background pattern" className="background-image" />
       </div>
       <div className="container">
         <header className="header">
@@ -67,7 +67,7 @@ function App() {
             </p>
             <div className="represented-by">
               <span>Represented By:</span>
-              <img src={`${baseUrl}/images/logo.svg`} alt="Seaworthy Yachts" className="represented-logo" />
+              <img src="/boat/images/logo.svg" alt="Seaworthy Yachts" className="represented-logo" />
             </div>
           </div>
         </header>

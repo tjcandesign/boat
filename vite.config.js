@@ -12,6 +12,5 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     copyPublicDir: true
-  },
-  publicDir: 'public'
+  }
 });
