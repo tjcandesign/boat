@@ -52,7 +52,7 @@ function App() {
           <div className="sticky-header">
             <div className="for-sale-label">For Sale</div>
             <a href="tel:+12026000069" className="cta-button">
-              Contact Seller
+              Contact Broker
             </a>
           </div>
           <div className="header-content">
