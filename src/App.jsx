@@ -52,19 +52,18 @@ function App() {
         <img src={`${assetsUrl}/Background.svg`} alt="Background pattern" className="background-image" />
       </div>
       <div className="container">
-        <div className="sticky-cta">
-          <a href="tel:+12026000069" className="cta-button">
-            Contact Seller
-          </a>
-        </div>
-
         <header className="header">
+          <div className="sticky-header">
+            <div className="price">$120,000</div>
+            <a href="tel:+12026000069" className="cta-button">
+              Contact Seller
+            </a>
+          </div>
           <div className="header-content">
             <div className="title-group">
               <div className="for-sale-label">For Sale</div>
               <h1>2021 Centurion Fi21</h1>
             </div>
-            <div className="price">$120,000</div>
             <p className="location">Arlington, VA</p>
             <div className="represented-by">
               <span>Represented By:</span>

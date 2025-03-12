@@ -33,11 +33,26 @@
   padding: 2rem;
 }
 
-.sticky-cta {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
+.sticky-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
   z-index: 100;
+  margin: -2rem -2rem 2rem -2rem;
+  padding: 1rem 2rem;
+}
+
+.sticky-header .price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-price);
+  margin: 0;
 }
 
 .cta-button {
@@ -100,11 +115,7 @@
   margin: 0;
 }
 
-.price {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 600;
-  color: var(--color-price);
-}
+
 
 .location {
   font-size: 1.2rem;
