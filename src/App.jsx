@@ -9,18 +9,17 @@ const baseUrl = '/boat'
 
 function App() {
   const baseUrl = 'https://tjcandesign.github.io/boat'
-  const assetsUrl = baseUrl + '/images'
   const boatImages = [
-    `${assetsUrl}/boat1.png`,
-    `${assetsUrl}/boat2.png`,
-    `${assetsUrl}/boat3.png`,
-    `${assetsUrl}/boat4.png`,
-    `${assetsUrl}/boat5.png`,
-    `${assetsUrl}/boat6.png`,
-    `${assetsUrl}/boat7.png`,
-    `${assetsUrl}/boat8.png`,
-    `${assetsUrl}/boat9.png`,
-    `${assetsUrl}/boat10.png`
+    `${baseUrl}/images/boat1.png`,
+    `${baseUrl}/images/boat2.png`,
+    `${baseUrl}/images/boat3.png`,
+    `${baseUrl}/images/boat4.png`,
+    `${baseUrl}/images/boat5.png`,
+    `${baseUrl}/images/boat6.png`,
+    `${baseUrl}/images/boat7.png`,
+    `${baseUrl}/images/boat8.png`,
+    `${baseUrl}/images/boat9.png`,
+    `${baseUrl}/images/boat10.png`
   ]
 
   const specs = {
@@ -49,7 +48,7 @@ function App() {
   return (
     <div className="app">
       <div className="background-wrapper">
-        <img src={`${assetsUrl}/Background.svg`} alt="Background pattern" className="background-image" />
+        <img src={`${baseUrl}/images/Background.svg`} alt="Background pattern" className="background-image" />
       </div>
       <div className="container">
         <header className="header">
@@ -70,7 +69,7 @@ function App() {
             </p>
             <div className="represented-by">
               <span>Represented By:</span>
-              <img src={`${assetsUrl}/logo.svg`} alt="Seaworthy Yachts" className="represented-logo" />
+              <img src={`${baseUrl}/images/logo.svg`} alt="Seaworthy Yachts" className="represented-logo" />
             </div>
           </div>
         </header>
