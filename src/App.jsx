@@ -6,7 +6,7 @@ import SpecList from './components/SpecList'
 
 // Using the baseUrl from our previous configuration
 function App() {
-  const baseUrl = '/boat'
+  const baseUrl = 'https://tjcandesign.github.io/boat'
   const boatImages = [
     `${baseUrl}/boat/boat1.png`,
     `${baseUrl}/boat/boat2.png`,
