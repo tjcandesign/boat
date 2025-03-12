@@ -6,18 +6,17 @@ import SpecList from './components/SpecList'
 
 // Using the baseUrl from our previous configuration
 function App() {
-  const baseUrl = '/boat'
   const boatImages = [
-    'boat1.png',
-    'boat2.png',
-    'boat3.png',
-    'boat4.png',
-    'boat5.png',
-    'boat6.png',
-    'boat7.png',
-    'boat8.png',
-    'boat9.png',
-    'boat10.png'
+    '/boat1.png',
+    '/boat2.png',
+    '/boat3.png',
+    '/boat4.png',
+    '/boat5.png',
+    '/boat6.png',
+    '/boat7.png',
+    '/boat8.png',
+    '/boat9.png',
+    '/boat10.png'
   ]
 
   const specs = {
@@ -121,8 +120,8 @@ function App() {
           <div className="footer-content">
             <p className="listing-status">Last updated: March 12, 2025 - Listing active</p>
             <div className="footer-logos">
-              <img src={`${assetsUrl}/mark.svg`} alt="Seaworthy mark" className="footer-mark" />
-              <img src={`${assetsUrl}/QR code.svg`} alt="QR Code" className="qr-code" />
+              <img src="/images/mark.svg" alt="Seaworthy mark" className="footer-mark" />
+              <img src="/images/QR code.svg" alt="QR Code" className="qr-code" />
             </div>
           </div>
         </footer>
