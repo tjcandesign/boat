@@ -6,18 +6,18 @@ import SpecList from './components/SpecList'
 
 // Using the baseUrl from our previous configuration
 function App() {
-  const baseUrl = 'https://tjcandesign.github.io/boat'
+  const baseUrl = '/boat'
   const boatImages = [
-    '/boat/boat1.png',
-    '/boat/boat2.png',
-    '/boat/boat3.png',
-    '/boat/boat4.png',
-    '/boat/boat5.png',
-    '/boat/boat6.png',
-    '/boat/boat7.png',
-    '/boat/boat8.png',
-    '/boat/boat9.png',
-    '/boat/boat10.png'
+    'boat1.png',
+    'boat2.png',
+    'boat3.png',
+    'boat4.png',
+    'boat5.png',
+    'boat6.png',
+    'boat7.png',
+    'boat8.png',
+    'boat9.png',
+    'boat10.png'
   ]
 
   const specs = {
@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="app">
       <div className="background-wrapper">
-        <img src="/boat/images/Background.svg" alt="Background pattern" className="background-image" />
+        <img src="images/Background.svg" alt="Background pattern" className="background-image" />
       </div>
       <div className="container">
         <header className="header">
@@ -67,7 +67,7 @@ function App() {
             </p>
             <div className="represented-by">
               <span>Represented By:</span>
-              <img src="/boat/images/logo.svg" alt="Seaworthy Yachts" className="represented-logo" />
+              <img src="images/logo.svg" alt="Seaworthy Yachts" className="represented-logo" />
             </div>
           </div>
         </header>
