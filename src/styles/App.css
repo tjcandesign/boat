@@ -51,7 +51,8 @@
 .sticky-header .price {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--color-price);
+  font-family: var(--font-mono);
+  color: var(--color-text);
   margin: 0;
 }
 
@@ -83,7 +84,8 @@
 }
 
 .for-sale-label {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: var(--color-text);
   margin-bottom: 0.5rem;
 }
@@ -223,6 +225,7 @@
 .spec-list {
   display: grid;
   gap: 1rem;
+  font-family: var(--font-mono);
 }
 
 .spec-item {
@@ -248,6 +251,7 @@
   margin: 0;
   display: grid;
   gap: 1rem;
+  font-family: var(--font-mono);
 }
 
 .features-list li {
@@ -268,10 +272,10 @@
   padding: 3rem;
   background: #f8f8f8;
   border-radius: var(--border-radius);
+  text-align: left;
 }
 
 .contact-intro {
-  text-align: center;
   color: var(--color-secondary);
   margin-bottom: 2rem;
 }
@@ -340,7 +344,7 @@
 .contact-buttons {
   display: flex;
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 2rem;
 }
 
