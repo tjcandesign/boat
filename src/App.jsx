@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/App.css'
-import ImageGallery from './components/ImageGallery'
+import MasonryGallery from './components/MasonryGallery'
 import SpecList from './components/SpecList'
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
 
         <main>
           <section className="gallery-section">
-            <ImageGallery images={boatImages} />
+            <MasonryGallery images={boatImages} />
           </section>
 
           <section className="info-section">
