@@ -67,7 +67,7 @@ function App() {
             </p>
             <div className="represented-by">
               <span>Represented By:</span>
-              <img src="images/logo.svg" alt="Seaworthy Yachts" className="represented-logo" />
+              <img src="images/saleslogo.svg" alt="Seaworthy Yachts" className="represented-logo" />
             </div>
           </div>
         </header>

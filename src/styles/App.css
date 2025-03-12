@@ -68,18 +68,18 @@
 .cta-button {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background: var(--color-primary);
+  background: #FF0000;
   color: white;
   text-decoration: none;
   border-radius: var(--border-radius);
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 6px 16px rgba(255, 0, 0, 0.3);
 }
 
 .header {
@@ -158,9 +158,9 @@
 }
 
 .header h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 700;
-  color: var(--color-text);
+  color: #FF0000;
   margin: 0;
 }
 
