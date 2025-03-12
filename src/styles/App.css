@@ -615,6 +615,18 @@ footer {
   border: 2px solid var(--color-primary);
 }
 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.active-status {
+  color: var(--color-primary);
+  font-weight: 700;
+  animation: blink 2s infinite;
+  display: inline-block;
+}
+
 
 
 @media (max-width: 768px) {

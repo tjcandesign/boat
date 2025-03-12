@@ -120,7 +120,9 @@ function App() {
 
         <footer>
           <div className="footer-content">
-            <p className="listing-status">Last updated: March 12, 2025 - Listing active</p>
+            <p className="listing-status">
+              Last updated: March 12, 2025 at 3:56 PM EDT - <span className="active-status">Listing active</span>
+            </p>
             <div className="footer-logos">
               <img src="/images/mark.svg" alt="Seaworthy mark" className="footer-mark" />
               <img src="/images/QR code.svg" alt="QR Code" className="qr-code" />
