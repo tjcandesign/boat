@@ -5,8 +5,6 @@ import MasonryGallery from './components/MasonryGallery'
 import SpecList from './components/SpecList'
 
 // Using the baseUrl from our previous configuration
-const baseUrl = '/boat'
-
 function App() {
   const baseUrl = '/boat'
   const boatImages = [
