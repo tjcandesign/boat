@@ -8,18 +8,18 @@ import SpecList from './components/SpecList'
 const baseUrl = '/boat'
 
 function App() {
-  const baseUrl = 'https://tjcandesign.github.io/boat'
+  const baseUrl = '/boat'
   const boatImages = [
-    `${baseUrl}/images/boat1.png`,
-    `${baseUrl}/images/boat2.png`,
-    `${baseUrl}/images/boat3.png`,
-    `${baseUrl}/images/boat4.png`,
-    `${baseUrl}/images/boat5.png`,
-    `${baseUrl}/images/boat6.png`,
-    `${baseUrl}/images/boat7.png`,
-    `${baseUrl}/images/boat8.png`,
-    `${baseUrl}/images/boat9.png`,
-    `${baseUrl}/images/boat10.png`
+    `${baseUrl}/boat/boat1.png`,
+    `${baseUrl}/boat/boat2.png`,
+    `${baseUrl}/boat/boat3.png`,
+    `${baseUrl}/boat/boat4.png`,
+    `${baseUrl}/boat/boat5.png`,
+    `${baseUrl}/boat/boat6.png`,
+    `${baseUrl}/boat/boat7.png`,
+    `${baseUrl}/boat/boat8.png`,
+    `${baseUrl}/boat/boat9.png`,
+    `${baseUrl}/boat/boat10.png`
   ]
 
   const specs = {
