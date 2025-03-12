@@ -3,8 +3,12 @@ import './styles/App.css'
 import MasonryGallery from './components/MasonryGallery'
 import SpecList from './components/SpecList'
 
+// Using the baseUrl from our previous configuration
+const baseUrl = '/boat'
+
 function App() {
   const baseUrl = 'https://tjcandesign.github.io/boat'
+  const assetsUrl = baseUrl + '/images'
   const boatImages = [
     `${baseUrl}/boat/boat1.png`,
     `${baseUrl}/boat/boat2.png`,
@@ -43,12 +47,22 @@ function App() {
 
   return (
     <div className="app">
+      <div className="background-wrapper">
+        <img src={`${assetsUrl}/Background.svg`} alt="Background pattern" className="background-image" />
+      </div>
       <div className="container">
         <header className="header">
           <div className="header-content">
+            <div className="logo-container">
+              <img src={`${assetsUrl}/logo.svg`} alt="Seaworthy Yachts Logo" className="main-logo" />
+            </div>
             <h1>2021 Centurion Fi21</h1>
             <div className="price">$120,000</div>
             <p className="location">Arlington, VA</p>
+            <div className="represented-by">
+              <span>For Sale represented by</span>
+              <img src={`${assetsUrl}/logo.svg`} alt="Seaworthy Yachts" className="represented-logo" />
+            </div>
           </div>
         </header>
 
@@ -98,8 +112,16 @@ function App() {
         </main>
 
         <footer>
-          <p>Listed on {new Date().toLocaleDateString()}</p>
-          <p>Warranty Information: Factory warranty remaining until 04/2026</p>
+          <div className="footer-content">
+            <div className="footer-left">
+              <p>Listed on {new Date().toLocaleDateString()}</p>
+              <p>Warranty Information: Factory warranty remaining until 04/2026</p>
+              <img src={`${assetsUrl}/mark.svg`} alt="Seaworthy mark" className="footer-mark" />
+            </div>
+            <div className="footer-right">
+              <img src={`${assetsUrl}/QR code.svg`} alt="QR Code" className="qr-code" />
+            </div>
+          </div>
         </footer>
       </div>
     </div>
