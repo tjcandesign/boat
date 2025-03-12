@@ -124,7 +124,7 @@ function App() {
               Last updated: March 12, 2025 at 3:56 PM EDT - <span className="active-status">Listing active</span>
             </p>
             <div className="footer-logos">
-              <img src="/images/mark.svg" alt="Seaworthy mark" className="footer-mark" />
+              <img src="/images/saleslogo.svg" alt="Seaworthy Yacht Sales" className="footer-logo" />
               <img src="/images/QR code.svg" alt="QR Code" className="qr-code" />
             </div>
           </div>

@@ -782,6 +782,12 @@ html {
   transform: scaleY(1);
 }
 
+.footer-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 1rem;
+}
+
 @media (max-width: 768px) {
   .header {
     margin: 4rem 0;
