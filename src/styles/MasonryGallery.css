@@ -6,15 +6,14 @@
 }
 
 .image-cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   width: 100%;
 }
 
 .image-card {
-  width: 90vw;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .card-content {
@@ -33,15 +32,10 @@
   object-fit: contain;
 }
 
-.card-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  padding: 20px;
-  color: white;
-  font-size: 1.1rem;
+@media (max-width: 1024px) {
+  .image-cards {
+    gap: 25px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -50,10 +44,12 @@
   }
 
   .image-cards {
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .card-overlay {
-    padding: 15px;
+  .image-card {
+    width: 90vw;
+    margin: 0 auto;
   }
 }
