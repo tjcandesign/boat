@@ -16,9 +16,6 @@ const MasonryGallery = ({ images }) => {
           >
             <div className="card-content">
               <img src={image} alt={`Boat view ${index + 1}`} loading="lazy" />
-              <div className="card-overlay">
-                <span>View {index + 1}</span>
-              </div>
             </div>
           </motion.div>
         ))}

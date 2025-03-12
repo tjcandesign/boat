@@ -52,16 +52,22 @@ function App() {
         <img src={`${assetsUrl}/Background.svg`} alt="Background pattern" className="background-image" />
       </div>
       <div className="container">
+        <div className="sticky-cta">
+          <a href="tel:+12026000069" className="cta-button">
+            Contact Seller
+          </a>
+        </div>
+
         <header className="header">
           <div className="header-content">
-            <div className="logo-container">
-              <img src={`${assetsUrl}/logo.svg`} alt="Seaworthy Yachts Logo" className="main-logo" />
+            <div className="title-group">
+              <div className="for-sale-label">For Sale</div>
+              <h1>2021 Centurion Fi21</h1>
             </div>
-            <h1>2021 Centurion Fi21</h1>
             <div className="price">$120,000</div>
             <p className="location">Arlington, VA</p>
             <div className="represented-by">
-              <span>For Sale represented by</span>
+              <span>Represented By:</span>
               <img src={`${assetsUrl}/logo.svg`} alt="Seaworthy Yachts" className="represented-logo" />
             </div>
           </div>
@@ -114,12 +120,9 @@ function App() {
 
         <footer>
           <div className="footer-content">
-            <div className="footer-left">
-              <p>Listed on {new Date().toLocaleDateString()}</p>
-              <p>Last updated: March 12, 2025 - Listing active</p>
+            <p className="listing-status">Last updated: March 12, 2025 - Listing active</p>
+            <div className="footer-logos">
               <img src={`${assetsUrl}/mark.svg`} alt="Seaworthy mark" className="footer-mark" />
-            </div>
-            <div className="footer-right">
               <img src={`${assetsUrl}/QR code.svg`} alt="QR Code" className="qr-code" />
             </div>
           </div>
