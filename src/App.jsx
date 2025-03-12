@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css'
 import './styles/App.css'
 import MasonryGallery from './components/MasonryGallery'
 import SpecList from './components/SpecList'
@@ -115,7 +116,7 @@ function App() {
           <div className="footer-content">
             <div className="footer-left">
               <p>Listed on {new Date().toLocaleDateString()}</p>
-              <p>Warranty Information: Factory warranty remaining until 04/2026</p>
+              <p>Last updated: March 12, 2025 - Listing active</p>
               <img src={`${assetsUrl}/mark.svg`} alt="Seaworthy mark" className="footer-mark" />
             </div>
             <div className="footer-right">
