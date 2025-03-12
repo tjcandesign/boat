@@ -3,18 +3,30 @@ import './styles/App.css'
 import ImageGallery from './components/ImageGallery'
 import SpecList from './components/SpecList'
 
+// Import boat images
+import mainImage from './assets/boat/Screenshot 2025-03-11 at 4.07.49 PM.png'
+import interiorImage from './assets/boat/Screenshot 2025-03-11 at 4.07.56 PM.png'
+import sideImage from './assets/boat/Screenshot 2025-03-11 at 4.08.01 PM.png'
+import towerImage from './assets/boat/Screenshot 2025-03-11 at 4.08.06 PM.png'
+import trailerImage from './assets/boat/Screenshot 2025-03-11 at 4.08.11 PM.png'
+import wakeImage from './assets/boat/Screenshot 2025-03-11 at 4.08.17 PM.png'
+import dockImage from './assets/boat/Screenshot 2025-03-11 at 4.08.22 PM.png'
+import coverImage from './assets/boat/Screenshot 2025-03-11 at 4.08.27 PM.png'
+import detail1Image from './assets/boat/Screenshot 2025-03-11 at 4.08.33 PM.png'
+import detail2Image from './assets/boat/Screenshot 2025-03-11 at 4.08.39 PM.png'
+
 function App() {
   const boatImages = [
-    `${import.meta.env.BASE_URL}images/boat/Screenshot 2025-03-11 at 4.07.49 PM.png`,
-    `${import.meta.env.BASE_URL}images/boat/Screenshot 2025-03-11 at 4.07.56 PM.png`,
-    `${import.meta.env.BASE_URL}images/boat/Screenshot 2025-03-11 at 4.08.01 PM.png`,
-    `${import.meta.env.BASE_URL}images/boat/Screenshot 2025-03-11 at 4.08.06 PM.png`,
-    `${import.meta.env.BASE_URL}images/boat/Screenshot 2025-03-11 at 4.08.11 PM.png`,
-    `${import.meta.env.BASE_URL}images/boat/Screenshot 2025-03-11 at 4.08.17 PM.png`,
-    `${import.meta.env.BASE_URL}images/boat/Screenshot 2025-03-11 at 4.08.22 PM.png`,
-    `${import.meta.env.BASE_URL}images/boat/Screenshot 2025-03-11 at 4.08.27 PM.png`,
-    `${import.meta.env.BASE_URL}images/boat/Screenshot 2025-03-11 at 4.08.33 PM.png`,
-    `${import.meta.env.BASE_URL}images/boat/Screenshot 2025-03-11 at 4.08.39 PM.png`
+    mainImage,
+    interiorImage,
+    sideImage,
+    towerImage,
+    trailerImage,
+    wakeImage,
+    dockImage,
+    coverImage,
+    detail1Image,
+    detail2Image
   ]
 
   const specs = {
