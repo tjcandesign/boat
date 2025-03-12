@@ -11,16 +11,16 @@ function App() {
   const baseUrl = 'https://tjcandesign.github.io/boat'
   const assetsUrl = baseUrl + '/images'
   const boatImages = [
-    `${baseUrl}/boat/boat1.png`,
-    `${baseUrl}/boat/boat2.png`,
-    `${baseUrl}/boat/boat3.png`,
-    `${baseUrl}/boat/boat4.png`,
-    `${baseUrl}/boat/boat5.png`,
-    `${baseUrl}/boat/boat6.png`,
-    `${baseUrl}/boat/boat7.png`,
-    `${baseUrl}/boat/boat8.png`,
-    `${baseUrl}/boat/boat9.png`,
-    `${baseUrl}/boat/boat10.png`
+    `${assetsUrl}/boat1.png`,
+    `${assetsUrl}/boat2.png`,
+    `${assetsUrl}/boat3.png`,
+    `${assetsUrl}/boat4.png`,
+    `${assetsUrl}/boat5.png`,
+    `${assetsUrl}/boat6.png`,
+    `${assetsUrl}/boat7.png`,
+    `${assetsUrl}/boat8.png`,
+    `${assetsUrl}/boat9.png`,
+    `${assetsUrl}/boat10.png`
   ]
 
   const specs = {
