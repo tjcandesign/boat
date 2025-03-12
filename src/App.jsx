@@ -61,7 +61,7 @@ function App() {
           <div className="header-content">
             <div className="title-group">
               <h1>2021 Centurion Fi21</h1>
-              <div className="price">$120,000</div>
+              <div className="price">$119,995</div>
             </div>
             <p className="location">
               <span className="icon">📍</span>
