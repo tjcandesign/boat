@@ -54,7 +54,8 @@
   }
 
   .wide-card .card-content img {
-    aspect-ratio: 21/9;
+    aspect-ratio: auto;
+    max-height: none;
   }
 
   .card-content {
