@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './styles/index.css'
 import './styles/App.css'
 import MasonryGallery from './components/MasonryGallery'
 import SpecList from './components/SpecList'
