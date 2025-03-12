@@ -54,7 +54,6 @@ function App() {
       <div className="container">
         <header className="header">
           <div className="sticky-header">
-            <div className="price">$120,000</div>
             <a href="tel:+12026000069" className="cta-button">
               Contact Seller
             </a>
@@ -63,8 +62,12 @@ function App() {
             <div className="title-group">
               <div className="for-sale-label">For Sale</div>
               <h1>2021 Centurion Fi21</h1>
+              <div className="price">$120,000</div>
             </div>
-            <p className="location">Arlington, VA</p>
+            <p className="location">
+              <span className="icon">📍</span>
+              Arlington, VA
+            </p>
             <div className="represented-by">
               <span>Represented By:</span>
               <img src={`${assetsUrl}/logo.svg`} alt="Seaworthy Yachts" className="represented-logo" />

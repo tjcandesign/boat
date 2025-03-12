@@ -6,14 +6,14 @@
 }
 
 .image-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  columns: 2;
+  column-gap: 30px;
   width: 100%;
 }
 
 .image-card {
-  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 30px;
 }
 
 .card-content {
@@ -29,7 +29,7 @@
   width: 100%;
   height: auto;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media (max-width: 1024px) {
