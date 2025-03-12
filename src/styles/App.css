@@ -240,14 +240,16 @@
 
 .specs-container h2,
 .features-container h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 .spec-list {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   font-family: var(--font-mono);
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .spec-item {
@@ -272,9 +274,10 @@
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   font-family: var(--font-mono);
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .features-list li {
@@ -295,6 +298,12 @@
   padding: 3rem;
   background: #f8f8f8;
   border-radius: var(--border-radius);
+  text-align: left;
+}
+
+.contact-section h2,
+.contact-section p,
+.contact-section .contact-buttons {
   text-align: left;
 }
 
@@ -369,6 +378,8 @@
   gap: 1.5rem;
   justify-content: flex-start;
   margin-top: 2rem;
+  flex-direction: column;
+  width: fit-content;
 }
 
 .contact-button {
