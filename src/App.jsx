@@ -5,16 +5,16 @@ import SpecList from './components/SpecList'
 
 function App() {
   const boatImages = [
-    '/boat/images/boat/Screenshot 2025-03-11 at 4.07.49 PM.png',
-    '/boat/images/boat/Screenshot 2025-03-11 at 4.07.56 PM.png',
-    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.01 PM.png',
-    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.06 PM.png',
-    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.11 PM.png',
-    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.17 PM.png',
-    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.22 PM.png',
-    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.27 PM.png',
-    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.33 PM.png',
-    '/boat/images/boat/Screenshot 2025-03-11 at 4.08.39 PM.png'
+    new URL('./assets/boat/Screenshot 2025-03-11 at 4.07.49 PM.png', import.meta.url).href,
+    new URL('./assets/boat/Screenshot 2025-03-11 at 4.07.56 PM.png', import.meta.url).href,
+    new URL('./assets/boat/Screenshot 2025-03-11 at 4.08.01 PM.png', import.meta.url).href,
+    new URL('./assets/boat/Screenshot 2025-03-11 at 4.08.06 PM.png', import.meta.url).href,
+    new URL('./assets/boat/Screenshot 2025-03-11 at 4.08.11 PM.png', import.meta.url).href,
+    new URL('./assets/boat/Screenshot 2025-03-11 at 4.08.17 PM.png', import.meta.url).href,
+    new URL('./assets/boat/Screenshot 2025-03-11 at 4.08.22 PM.png', import.meta.url).href,
+    new URL('./assets/boat/Screenshot 2025-03-11 at 4.08.27 PM.png', import.meta.url).href,
+    new URL('./assets/boat/Screenshot 2025-03-11 at 4.08.33 PM.png', import.meta.url).href,
+    new URL('./assets/boat/Screenshot 2025-03-11 at 4.08.39 PM.png', import.meta.url).href
   ]
 
   const specs = {
