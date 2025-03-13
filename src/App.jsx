@@ -7,6 +7,16 @@ import SpecList from './components/SpecList'
 // Using the baseUrl from our previous configuration
 function App() {
   const boatImages = [
+    '/boat1.png',
+    '/boat2.png',
+    '/boat3.png',
+    '/boat4.png',
+    '/boat5.png',
+    '/boat6.png',
+    '/boat7.png',
+    '/boat8.png',
+    '/boat9.png',
+    '/boat10.png',
     '/images/2021-centurion-fi21-power-new.jpg',
     '/images/2021-centurion-fi21-power-new2.jpg',
     '/images/2021-centurion-fi21-power-new3.jpg',
