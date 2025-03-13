@@ -698,8 +698,18 @@ footer {
 .active-status {
   color: var(--color-primary);
   font-weight: 700;
-  animation: blink 2s infinite;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  background-color: #ff4444;
+  border-radius: 50%;
   display: inline-block;
+  animation: blink 2s infinite;
 }
 
 
