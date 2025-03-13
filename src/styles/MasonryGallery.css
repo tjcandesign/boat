@@ -176,15 +176,19 @@
 
   .wide-card {
     column-span: all;
+    width: 100%;
+    max-width: 100%;
   }
 
   .wide-card .card-content {
     aspect-ratio: 21/9;
+    width: 100%;
   }
 
   .wide-card .card-content img {
     min-height: unset;
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
