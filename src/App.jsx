@@ -7,16 +7,11 @@ import SpecList from './components/SpecList'
 // Using the baseUrl from our previous configuration
 function App() {
   const boatImages = [
-    '/boat1.png',
-    '/boat2.png',
-    '/boat3.png',
-    '/boat4.png',
-    '/boat5.png',
-    '/boat6.png',
-    '/boat7.png',
-    '/boat8.png',
-    '/boat9.png',
-    '/boat10.png'
+    '/images/2021-centurion-fi21-power-new.jpg',
+    '/images/2021-centurion-fi21-power-new2.jpg',
+    '/images/2021-centurion-fi21-power-new3.jpg',
+    '/images/2021-centurion-fi21-power-new4.jpg',
+    '/images/2021-centurion-fi21-power-new5.jpg'
   ]
 
   const specs = {
@@ -95,17 +90,24 @@ function App() {
 
             <div className="manufacturer-description">
               <h2>Manufacturer Description</h2>
-              <p>
-                Safe to say, you can expect the perfect ride, every time, from this pro-tested boat. 
-                The side-to-side balance creates easy-to-achieve, symmetrical waves and wakes, and less 
-                resistance on its running surface, delivers superior handing and 50 percent better fuel economy. 
-                This boat is the top performer and striking from a distance, Centurion has made interior 
-                comfort a focus with the interior finishes including the Cobra Racing Driver's Seat with 
-                slide and 106-degree swivel as well as the easy-access trash receptacle. Options like the 
-                6-way Auto Seat, 180-degree Rearview Camera finish the Fi21's available refinements for 2021. 
-                Choose your custom color combos to express your personal style and put an exclamation point 
-                on the statement this boat makes.
-              </p>
+              <div className="description-content">
+                <p>
+                  Safe to say, you can expect the perfect ride, every time, from this pro-tested boat. 
+                  The side-to-side balance creates easy-to-achieve, symmetrical waves and wakes, and less 
+                  resistance on its running surface, delivers superior handing and 50 percent better fuel economy. 
+                  This boat is the top performer and striking from a distance, Centurion has made interior 
+                  comfort a focus with the interior finishes including the Cobra Racing Driver's Seat with 
+                  slide and 106-degree swivel as well as the easy-access trash receptacle. Options like the 
+                  6-way Auto Seat, 180-degree Rearview Camera finish the Fi21's available refinements for 2021. 
+                  Choose your custom color combos to express your personal style and put an exclamation point 
+                  on the statement this boat makes.
+                </p>
+                <img 
+                  src="/images/Descriptionimage.png" 
+                  alt="Centurion Fi21 Features" 
+                  className="description-image"
+                />
+              </div>
             </div>
           </section>
 

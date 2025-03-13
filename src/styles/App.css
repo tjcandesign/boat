@@ -320,11 +320,39 @@
   margin-bottom: 1.5rem;
 }
 
+.description-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .description-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
 .manufacturer-description p {
   font-size: 1.1rem;
   line-height: 1.7;
   color: var(--color-text);
   max-width: 70ch;
+  margin: 0;
+}
+
+.description-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .description-image {
+    max-width: 40%;
+  }
 }
 
 .info-section {
