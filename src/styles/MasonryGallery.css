@@ -178,8 +178,14 @@
     column-span: all;
   }
 
+  .wide-card .card-content {
+    aspect-ratio: 21/9;
+  }
+
   .wide-card .card-content img {
-    min-height: 500px;
+    min-height: unset;
+    height: 100%;
+    object-fit: cover;
   }
 
   .card-content {
