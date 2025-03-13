@@ -104,10 +104,17 @@
   }
 }
 
+.contact-options {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
 .cta-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   height: 48px;
   padding: 0.8rem 1.5rem;
   background: #FF0000;
@@ -117,11 +124,28 @@
   font-weight: 600;
   box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
   transition: transform 0.2s, box-shadow 0.2s;
+  flex: 1;
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(255, 0, 0, 0.3);
+}
+
+.cta-button-secondary {
+  background: white;
+  color: #FF0000;
+  border: 2px solid #FF0000;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
+}
+
+.cta-button-secondary:hover {
+  background: #fff5f5;
+  box-shadow: 0 6px 16px rgba(255, 0, 0, 0.2);
+}
+
+.cta-button .icon {
+  font-size: 1.2rem;
 }
 
 .header {

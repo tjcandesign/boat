@@ -65,9 +65,16 @@ function App() {
               <h1>2021 Centurion Fi21</h1>
               <div className="price-action-group">
                 <div className="price">$119,995</div>
-                <a href="tel:+12026000069" className="cta-button">
-                  Contact Broker
-                </a>
+                <div className="contact-options">
+                  <a href="tel:+12026000069" className="cta-button">
+                    <span className="icon">📞</span>
+                    Call Broker
+                  </a>
+                  <a href="sms:+12026000069" className="cta-button cta-button-secondary">
+                    <span className="icon">💬</span>
+                    Text Broker
+                  </a>
+                </div>
               </div>
             </div>
             <p className="location">
