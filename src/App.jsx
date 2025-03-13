@@ -55,7 +55,7 @@ function App() {
         </div>
       </div>
       <div className="background-wrapper">
-        <img src="images/Background.svg" alt="Background pattern" className="background-image" />
+        <img src="/images/Background.svg" alt="Background pattern" className="background-image" />
       </div>
       <div className="container">
         <header className="header">
