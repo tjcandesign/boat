@@ -79,22 +79,24 @@ function App() {
           </section>
 
           <section className="info-section">
-            <div className="specs-container">
-              <h2>Specifications</h2>
-              <SpecList specs={specs} />
+            <div className="info-grid">
+              <div className="specs-container">
+                <h2>Specifications</h2>
+                <SpecList specs={specs} />
+              </div>
+
+              <div className="features-container">
+                <h2>Key Features</h2>
+                <ul className="features-list">
+                  {features.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
-            <div className="features-container">
-              <h2>Key Features</h2>
-              <ul className="features-list">
-                {features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
-                ))}
-              </ul>
-            </div>
-
-            <section className="manufacturer-description">
-              <h2>Manufacturer Provided Description</h2>
+            <div className="manufacturer-description">
+              <h2>Manufacturer Description</h2>
               <p>
                 Safe to say, you can expect the perfect ride, every time, from this pro-tested boat. 
                 The side-to-side balance creates easy-to-achieve, symmetrical waves and wakes, and less 
@@ -106,7 +108,7 @@ function App() {
                 Choose your custom color combos to express your personal style and put an exclamation point 
                 on the statement this boat makes.
               </p>
-            </section>
+            </div>
           </section>
 
           <section className="contact-section">

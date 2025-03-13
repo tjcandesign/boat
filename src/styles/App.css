@@ -366,10 +366,22 @@
 }
 
 .info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.info-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 768px) {
