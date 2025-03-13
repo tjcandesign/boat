@@ -49,6 +49,11 @@ function App() {
 
   return (
     <div className="app">
+      <div className="notification-banner">
+        <div className="notification-content">
+          3.5 YEARS REMAINING ON MANUFACTURER WARRANTY
+        </div>
+      </div>
       <div className="background-wrapper">
         <img src="images/Background.svg" alt="Background pattern" className="background-image" />
       </div>
