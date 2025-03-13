@@ -74,6 +74,21 @@ function App() {
         </header>
 
         <main>
+          <section className="manufacturer-description">
+            <h2>Manufacturer Provided Description</h2>
+            <p>
+              Safe to say, you can expect the perfect ride, every time, from this pro-tested boat. 
+              The side-to-side balance creates easy-to-achieve, symmetrical waves and wakes, and less 
+              resistance on its running surface, delivers superior handing and 50 percent better fuel economy. 
+              This boat is the top performer and striking from a distance, Centurion has made interior 
+              comfort a focus with the interior finishes including the Cobra Racing Driver's Seat with 
+              slide and 106-degree swivel as well as the easy-access trash receptacle. Options like the 
+              6-way Auto Seat, 180-degree Rearview Camera finish the Fi21's available refinements for 2021. 
+              Choose your custom color combos to express your personal style and put an exclamation point 
+              on the statement this boat makes.
+            </p>
+          </section>
+
           <section className="gallery-section">
             <MasonryGallery images={boatImages} />
           </section>

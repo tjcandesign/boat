@@ -342,6 +342,29 @@
   object-fit: cover;
 }
 
+.manufacturer-description {
+  padding: 2rem;
+  background: rgba(248, 248, 248, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin: 2rem 0;
+}
+
+.manufacturer-description h2 {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.manufacturer-description p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  max-width: 70ch;
+}
+
 .info-section {
   display: grid;
   grid-template-columns: 1fr;
