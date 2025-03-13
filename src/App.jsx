@@ -49,11 +49,9 @@ function App() {
       </div>
       <div className="container">
         <header className="header">
-          <div className="sticky-header">
-            <div className="for-sale-label">For Sale</div>
-          </div>
           <div className="header-content">
             <div className="title-group">
+              <div className="for-sale-label">For Sale</div>
               <h1>2021 Centurion Fi21</h1>
               <div className="price-action-group">
                 <div className="price">$119,995</div>
