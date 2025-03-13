@@ -2,19 +2,27 @@
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .image-cards {
   columns: 1;
-  column-gap: 15px;
+  column-gap: 10px;
   width: 100%;
+  padding: 0;
 }
 
 .image-card {
   break-inside: avoid;
-  margin-bottom: 15px;
-  padding: 0;
+  margin-bottom: 10px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .image-card {
+    padding: 0;
+  }
 }
 
 .card-content {
@@ -155,10 +163,12 @@
   .image-cards {
     columns: 2;
     column-gap: 20px;
+    padding: 0;
   }
 
   .image-card {
     margin-bottom: 20px;
+    padding: 0;
   }
 
   .wide-card {
