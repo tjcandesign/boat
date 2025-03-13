@@ -110,6 +110,15 @@
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .contact-options {
+    max-width: 500px;
+  }
+  .cta-button {
+    max-width: 250px;
+  }
+}
+
 .cta-button {
   display: inline-flex;
   align-items: center;
