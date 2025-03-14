@@ -92,28 +92,23 @@
 
 .input-group .percent-symbol {
   position: absolute;
-  right: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #666;
-  font-family: var(--font-sans);
-  pointer-events: none;
-}
-
-.interest-rate-input .percent-symbol {
   right: 0;
-  width: 2rem;
-  text-align: center;
+  top: 0;
+  bottom: 0;
+  width: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  top: 0;
-  transform: none;
+  color: #666;
+  font-family: var(--font-sans);
+  pointer-events: none;
+  background: transparent;
 }
 
+
+
 .percent-input {
-  padding-right: 1.5rem !important;
+  padding-right: 2.5rem !important;
   padding-left: 0.75rem !important;
 }
 
