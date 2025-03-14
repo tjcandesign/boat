@@ -502,9 +502,8 @@
   display: grid;
   gap: 1.5rem;
   font-family: var(--font-sans);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 700;
+  letter-spacing: normal;
+  font-weight: 400;
 }
 
 .spec-item {
@@ -532,9 +531,8 @@
   display: grid;
   gap: 1.5rem;
   font-family: var(--font-sans);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 700;
+  letter-spacing: normal;
+  font-weight: 400;
 }
 
 .features-list li {
