@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const FinanceCalculator = ({ boatPrice }) => {
   const [downPaymentPercent, setDownPaymentPercent] = useState(20); // Default 20% down
+  const [downPaymentPercentInput, setDownPaymentPercentInput] = useState('20.00');
   const [downPaymentAmount, setDownPaymentAmount] = useState(boatPrice * 0.2); // Default amount based on 20%
   const [loanTerm, setLoanTerm] = useState(180); // Total loan term in months
   const [termType, setTermType] = useState('years'); // 'years' or 'months'
@@ -10,10 +11,14 @@ const FinanceCalculator = ({ boatPrice }) => {
   const [interestRateInput, setInterestRateInput] = useState('7.99');
   const [monthlyPayment, setMonthlyPayment] = useState(0);
 
-  const handlePercentChange = (percent) => {
-    const newPercent = Number(percent);
-    setDownPaymentPercent(newPercent);
-    setDownPaymentAmount(boatPrice * (newPercent / 100));
+  const handlePercentChange = (input) => {
+    const cleanInput = input.replace(/[^0-9.]/g, '');
+    setDownPaymentPercentInput(cleanInput);
+    const newPercent = Number(cleanInput);
+    if (!isNaN(newPercent) && newPercent >= 0 && newPercent <= 100) {
+      setDownPaymentPercent(newPercent);
+      setDownPaymentAmount(boatPrice * (newPercent / 100));
+    }
   };
 
   const handleAmountChange = (amount) => {
@@ -80,8 +85,17 @@ const FinanceCalculator = ({ boatPrice }) => {
             <div className="input-group">
               <input
                 type="text"
-                value={formatDecimal(downPaymentPercent, 2)}
-                onChange={(e) => handlePercentChange(e.target.value.replace(/,/g, ''))}
+                value={downPaymentPercentInput}
+                onChange={(e) => handlePercentChange(e.target.value)}
+                onBlur={() => {
+                  const value = Number(downPaymentPercentInput);
+                  if (!isNaN(value) && value >= 0 && value <= 100) {
+                    setDownPaymentPercentInput(value.toFixed(2));
+                  } else {
+                    // Reset to current percent if invalid
+                    setDownPaymentPercentInput(downPaymentPercent.toFixed(2));
+                  }
+                }}
                 className="percent-input"
               />
               <span className="percent-symbol">%</span>
