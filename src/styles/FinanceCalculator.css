@@ -46,7 +46,15 @@
 
 .down-payment-inputs {
   display: flex;
+  align-items: center;
   gap: 1rem;
+}
+
+.input-separator {
+  color: #666;
+  font-size: 0.875rem;
+  font-style: italic;
+  margin: 0 0.25rem;
 }
 
 .input-group {

@@ -82,6 +82,7 @@ const FinanceCalculator = ({ boatPrice }) => {
               />
               <span className="currency-symbol">$</span>
             </div>
+            <span className="input-separator">or</span>
             <div className="input-group">
               <input
                 type="text"
