@@ -102,6 +102,8 @@
   font-family: var(--font-sans);
   pointer-events: none;
   background: transparent;
+  line-height: 1;
+  padding-bottom: 2px;
 }
 
 
@@ -109,6 +111,7 @@
 .percent-input {
   padding-right: 2.5rem !important;
   text-align: right;
+  line-height: 1;
 }
 
 .calculator-input select {
