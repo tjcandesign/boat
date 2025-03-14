@@ -3,8 +3,11 @@ import React, { useState, useEffect } from 'react';
 const FinanceCalculator = ({ boatPrice }) => {
   const [downPaymentPercent, setDownPaymentPercent] = useState(20); // Default 20% down
   const [downPaymentAmount, setDownPaymentAmount] = useState(boatPrice * 0.2); // Default amount based on 20%
-  const [loanTerm, setLoanTerm] = useState(180); // Default 15 years (180 months)
+  const [loanTerm, setLoanTerm] = useState(180); // Total loan term in months
+  const [termType, setTermType] = useState('years'); // 'years' or 'months'
+  const [totalCost, setTotalCost] = useState(0);
   const [interestRate, setInterestRate] = useState(7.99); // Default rate
+  const [interestRateInput, setInterestRateInput] = useState('7.99');
   const [monthlyPayment, setMonthlyPayment] = useState(0);
 
   const handlePercentChange = (percent) => {
@@ -27,17 +30,36 @@ const FinanceCalculator = ({ boatPrice }) => {
     }).format(value);
   };
 
+  const formatDecimal = (value, decimals = 2) => {
+    return new Intl.NumberFormat('en-US', {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals,
+    }).format(value);
+  };
+
   const calculatePayment = () => {
-    const principal = boatPrice - downPaymentAmount;
-    const monthlyRate = (interestRate / 100) / 12;
-    const payment = principal * (monthlyRate * Math.pow(1 + monthlyRate, loanTerm)) / 
-                   (Math.pow(1 + monthlyRate, loanTerm) - 1);
-    setMonthlyPayment(payment);
+    try {
+      const principal = boatPrice - downPaymentAmount;
+      const monthlyRate = (interestRate / 100) / 12;
+      const payment = principal * (monthlyRate * Math.pow(1 + monthlyRate, loanTerm)) / 
+                     (Math.pow(1 + monthlyRate, loanTerm) - 1);
+      
+      if (isNaN(payment) || !isFinite(payment)) {
+        setMonthlyPayment(0);
+        setTotalCost(0);
+      } else {
+        setMonthlyPayment(payment);
+        setTotalCost(payment * loanTerm + downPaymentAmount);
+      }
+    } catch (error) {
+      setMonthlyPayment(0);
+      setTotalCost(0);
+    }
   };
 
   useEffect(() => {
     calculatePayment();
-  }, [downPayment, loanTerm, interestRate, boatPrice]);
+  }, [downPaymentAmount, downPaymentPercent, loanTerm, interestRate, boatPrice]);
 
   return (
     <div className="finance-calculator">
@@ -48,24 +70,18 @@ const FinanceCalculator = ({ boatPrice }) => {
           <div className="down-payment-inputs">
             <div className="input-group">
               <input
-                type="number"
-                value={downPaymentAmount}
-                onChange={(e) => handleAmountChange(e.target.value)}
-                min="0"
-                max={boatPrice}
-                step="1000"
+                type="text"
+                value={formatCurrency(downPaymentAmount)}
+                onChange={(e) => handleAmountChange(e.target.value.replace(/,/g, ''))}
                 className="amount-input"
               />
               <span className="currency-symbol">$</span>
             </div>
             <div className="input-group">
               <input
-                type="number"
-                value={Math.round(downPaymentPercent * 100) / 100}
-                onChange={(e) => handlePercentChange(e.target.value)}
-                min="0"
-                max="100"
-                step="0.1"
+                type="text"
+                value={formatDecimal(downPaymentPercent, 2)}
+                onChange={(e) => handlePercentChange(e.target.value.replace(/,/g, ''))}
                 className="percent-input"
               />
               <span className="percent-symbol">%</span>
@@ -73,35 +89,64 @@ const FinanceCalculator = ({ boatPrice }) => {
           </div>
         </div>
 
-        <div className="calculator-input">
+        <div className="calculator-input loan-term-input">
           <label>Loan Term</label>
-          <select 
-            value={loanTerm} 
-            onChange={(e) => setLoanTerm(Number(e.target.value))}
-          >
-            <option value={120}>10 Years</option>
-            <option value={180}>15 Years</option>
-            <option value={240}>20 Years</option>
-          </select>
+          <div className="term-inputs">
+            <select 
+              value={loanTerm} 
+              onChange={(e) => setLoanTerm(Number(e.target.value))}
+              className="term-select"
+            >
+              <option value={60}>5 Years</option>
+              <option value={84}>7 Years</option>
+              <option value={120}>10 Years</option>
+              <option value={180}>15 Years</option>
+              <option value={240}>20 Years</option>
+            </select>
+          </div>
         </div>
 
-        <div className="calculator-input">
-          <label>Interest Rate (%)</label>
-          <select 
-            value={interestRate} 
-            onChange={(e) => setInterestRate(Number(e.target.value))}
-          >
-            <option value={6.99}>6.99%</option>
-            <option value={7.99}>7.99%</option>
-            <option value={8.99}>8.99%</option>
-          </select>
+        <div className="calculator-input interest-rate-input">
+          <label>Interest Rate</label>
+          <div className="input-group">
+            <input
+              type="text"
+              value={interestRateInput}
+              onChange={(e) => {
+                const input = e.target.value.replace(/[^0-9.]/g, '');
+                setInterestRateInput(input);
+                const value = Number(input);
+                if (!isNaN(value) && value >= 0 && value <= 100) {
+                  setInterestRate(value || 7.99); // Use default if value is 0
+                }
+              }}
+              onBlur={() => {
+                const value = Number(interestRateInput);
+                if (!isNaN(value) && value > 0 && value <= 100) {
+                  setInterestRateInput(value.toFixed(2));
+                } else {
+                  // Reset to default rate if invalid
+                  setInterestRate(7.99);
+                  setInterestRateInput('7.99');
+                }
+              }}
+              className="percent-input"
+            />
+            <span className="percent-symbol">%</span>
+          </div>
         </div>
       </div>
 
       <div className="payment-result">
-        <div className="monthly-payment">
-          <span>Estimated Monthly Payment:</span>
-          <span className="amount">${monthlyPayment.toFixed(2)}</span>
+        <div className="payment-details">
+          <div className="monthly-payment">
+            <span>Estimated Monthly Payment:</span>
+            <span className="amount">${formatDecimal(monthlyPayment)}</span>
+          </div>
+          <div className="total-cost">
+            <span>Total Cost of Loan:</span>
+            <span className="amount">${formatDecimal(totalCost)}</span>
+          </div>
         </div>
         <p className="finance-disclaimer">
           *Estimated payments are for illustration purposes only. Actual terms and rates may vary based on credit approval and other factors. Contact us for detailed financing options.
