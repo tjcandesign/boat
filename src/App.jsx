@@ -1,8 +1,10 @@
 import React from 'react'
 import './styles/index.css'
 import './styles/App.css'
+import './styles/FinanceCalculator.css'
 import MasonryGallery from './components/MasonryGallery'
 import SpecList from './components/SpecList'
+import FinanceCalculator from './components/FinanceCalculator'
 
 // Using the baseUrl from our previous configuration
 function App() {
@@ -144,6 +146,10 @@ function App() {
                 />
               </div>
             </div>
+          </section>
+
+          <section className="finance-section">
+            <FinanceCalculator boatPrice={119995} />
           </section>
 
           <section className="contact-section">
